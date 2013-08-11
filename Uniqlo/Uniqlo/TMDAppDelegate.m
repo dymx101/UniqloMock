@@ -8,6 +8,8 @@
 
 #import "TMDAppDelegate.h"
 
+#import "JBTabBar.h"
+
 #import "TMDFirstViewController.h"
 
 #import "TMDSecondViewController.h"
@@ -18,9 +20,14 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    //JBTabBarController* tabBarController = [[JBTabBarController alloc] init];
+    
+    
     UIViewController *viewController1 = [[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
-    self.tabBarController = [[UITabBarController alloc] init];
+    
+    self.tabBarController = [JBTabBarController new];//[[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

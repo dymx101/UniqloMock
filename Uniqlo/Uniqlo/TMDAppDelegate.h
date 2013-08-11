@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JBTabBarController.h"
 
 @interface TMDAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (strong, nonatomic) JBTabBarController *tabBarController;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38E7EBF11040436992E08DE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13322FA2D8934DCAA683C0A6 /* libPods.a */; };
 		EA95A8ED17B70C2D009BA55E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95A8EC17B70C2D009BA55E /* UIKit.framework */; };
 		EA95A8EF17B70C2D009BA55E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95A8EE17B70C2D009BA55E /* Foundation.framework */; };
 		EA95A8F117B70C2D009BA55E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95A8F017B70C2D009BA55E /* CoreGraphics.framework */; };
@@ -24,9 +25,31 @@
 		EA95A91117B70C2D009BA55E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA95A91017B70C2D009BA55E /* second@2x.png */; };
 		EA95A91417B70C2D009BA55E /* TMDFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA95A91217B70C2D009BA55E /* TMDFirstViewController.xib */; };
 		EA95A91717B70C2D009BA55E /* TMDSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA95A91517B70C2D009BA55E /* TMDSecondViewController.xib */; };
+		EA962B9A17B7A6C400212159 /* At-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8217B7A6C400212159 /* At-selected.png */; };
+		EA962B9B17B7A6C400212159 /* At-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8317B7A6C400212159 /* At-selected@2x.png */; };
+		EA962B9C17B7A6C400212159 /* At-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8417B7A6C400212159 /* At-unselected.png */; };
+		EA962B9D17B7A6C400212159 /* At-unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8517B7A6C400212159 /* At-unselected@2x.png */; };
+		EA962B9E17B7A6C400212159 /* Brain-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8717B7A6C400212159 /* Brain-selected.png */; };
+		EA962B9F17B7A6C400212159 /* Brain-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8817B7A6C400212159 /* Brain-selected@2x.png */; };
+		EA962BA017B7A6C400212159 /* Brain-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8917B7A6C400212159 /* Brain-unselected.png */; };
+		EA962BA117B7A6C400212159 /* Brain-unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8A17B7A6C400212159 /* Brain-unselected@2x.png */; };
+		EA962BA217B7A6C400212159 /* Elephant-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8C17B7A6C400212159 /* Elephant-selected.png */; };
+		EA962BA317B7A6C400212159 /* Elephant-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8D17B7A6C400212159 /* Elephant-selected@2x.png */; };
+		EA962BA417B7A6C400212159 /* Elephant-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8E17B7A6C400212159 /* Elephant-unselected.png */; };
+		EA962BA517B7A6C400212159 /* Elephant-unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B8F17B7A6C400212159 /* Elephant-unselected@2x.png */; };
+		EA962BA617B7A6C400212159 /* Fist-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9117B7A6C400212159 /* Fist-selected.png */; };
+		EA962BA717B7A6C400212159 /* Fist-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9217B7A6C400212159 /* Fist-selected@2x.png */; };
+		EA962BA817B7A6C400212159 /* Fist-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9317B7A6C400212159 /* Fist-unselected.png */; };
+		EA962BA917B7A6C400212159 /* Fist-unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9417B7A6C400212159 /* Fist-unselected@2x.png */; };
+		EA962BAA17B7A6C400212159 /* Levitate-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9617B7A6C400212159 /* Levitate-selected.png */; };
+		EA962BAB17B7A6C400212159 /* Levitate-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9717B7A6C400212159 /* Levitate-selected@2x.png */; };
+		EA962BAC17B7A6C400212159 /* Levitate-unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9817B7A6C400212159 /* Levitate-unselected.png */; };
+		EA962BAD17B7A6C400212159 /* Levitate-unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962B9917B7A6C400212159 /* Levitate-unselected@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13322FA2D8934DCAA683C0A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4B27EB010842D2B984CFF8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EA95A8E917B70C2D009BA55E /* Uniqlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uniqlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA95A8EC17B70C2D009BA55E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA95A8EE17B70C2D009BA55E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +73,26 @@
 		EA95A91017B70C2D009BA55E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		EA95A91317B70C2D009BA55E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TMDFirstViewController.xib; sourceTree = "<group>"; };
 		EA95A91617B70C2D009BA55E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TMDSecondViewController.xib; sourceTree = "<group>"; };
+		EA962B8217B7A6C400212159 /* At-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "At-selected.png"; sourceTree = "<group>"; };
+		EA962B8317B7A6C400212159 /* At-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "At-selected@2x.png"; sourceTree = "<group>"; };
+		EA962B8417B7A6C400212159 /* At-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "At-unselected.png"; sourceTree = "<group>"; };
+		EA962B8517B7A6C400212159 /* At-unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "At-unselected@2x.png"; sourceTree = "<group>"; };
+		EA962B8717B7A6C400212159 /* Brain-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brain-selected.png"; sourceTree = "<group>"; };
+		EA962B8817B7A6C400212159 /* Brain-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brain-selected@2x.png"; sourceTree = "<group>"; };
+		EA962B8917B7A6C400212159 /* Brain-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brain-unselected.png"; sourceTree = "<group>"; };
+		EA962B8A17B7A6C400212159 /* Brain-unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brain-unselected@2x.png"; sourceTree = "<group>"; };
+		EA962B8C17B7A6C400212159 /* Elephant-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Elephant-selected.png"; sourceTree = "<group>"; };
+		EA962B8D17B7A6C400212159 /* Elephant-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Elephant-selected@2x.png"; sourceTree = "<group>"; };
+		EA962B8E17B7A6C400212159 /* Elephant-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Elephant-unselected.png"; sourceTree = "<group>"; };
+		EA962B8F17B7A6C400212159 /* Elephant-unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Elephant-unselected@2x.png"; sourceTree = "<group>"; };
+		EA962B9117B7A6C400212159 /* Fist-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fist-selected.png"; sourceTree = "<group>"; };
+		EA962B9217B7A6C400212159 /* Fist-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fist-selected@2x.png"; sourceTree = "<group>"; };
+		EA962B9317B7A6C400212159 /* Fist-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fist-unselected.png"; sourceTree = "<group>"; };
+		EA962B9417B7A6C400212159 /* Fist-unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fist-unselected@2x.png"; sourceTree = "<group>"; };
+		EA962B9617B7A6C400212159 /* Levitate-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Levitate-selected.png"; sourceTree = "<group>"; };
+		EA962B9717B7A6C400212159 /* Levitate-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Levitate-selected@2x.png"; sourceTree = "<group>"; };
+		EA962B9817B7A6C400212159 /* Levitate-unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Levitate-unselected.png"; sourceTree = "<group>"; };
+		EA962B9917B7A6C400212159 /* Levitate-unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Levitate-unselected@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +103,7 @@
 				EA95A8ED17B70C2D009BA55E /* UIKit.framework in Frameworks */,
 				EA95A8EF17B70C2D009BA55E /* Foundation.framework in Frameworks */,
 				EA95A8F117B70C2D009BA55E /* CoreGraphics.framework in Frameworks */,
+				38E7EBF11040436992E08DE7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,9 +113,11 @@
 		EA95A8E017B70C2D009BA55E = {
 			isa = PBXGroup;
 			children = (
+				EA962B7E17B7A6C400212159 /* Resources */,
 				EA95A8F217B70C2D009BA55E /* Uniqlo */,
 				EA95A8EB17B70C2D009BA55E /* Frameworks */,
 				EA95A8EA17B70C2D009BA55E /* Products */,
+				4F4B27EB010842D2B984CFF8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +135,7 @@
 				EA95A8EC17B70C2D009BA55E /* UIKit.framework */,
 				EA95A8EE17B70C2D009BA55E /* Foundation.framework */,
 				EA95A8F017B70C2D009BA55E /* CoreGraphics.framework */,
+				13322FA2D8934DCAA683C0A6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +174,89 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EA962B7E17B7A6C400212159 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B7F17B7A6C400212159 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA962B7F17B7A6C400212159 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B8017B7A6C400212159 /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EA962B8017B7A6C400212159 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B8117B7A6C400212159 /* At */,
+				EA962B8617B7A6C400212159 /* Brain */,
+				EA962B8B17B7A6C400212159 /* Elephant */,
+				EA962B9017B7A6C400212159 /* Fist */,
+				EA962B9517B7A6C400212159 /* Levitate */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		EA962B8117B7A6C400212159 /* At */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B8217B7A6C400212159 /* At-selected.png */,
+				EA962B8317B7A6C400212159 /* At-selected@2x.png */,
+				EA962B8417B7A6C400212159 /* At-unselected.png */,
+				EA962B8517B7A6C400212159 /* At-unselected@2x.png */,
+			);
+			path = At;
+			sourceTree = "<group>";
+		};
+		EA962B8617B7A6C400212159 /* Brain */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B8717B7A6C400212159 /* Brain-selected.png */,
+				EA962B8817B7A6C400212159 /* Brain-selected@2x.png */,
+				EA962B8917B7A6C400212159 /* Brain-unselected.png */,
+				EA962B8A17B7A6C400212159 /* Brain-unselected@2x.png */,
+			);
+			path = Brain;
+			sourceTree = "<group>";
+		};
+		EA962B8B17B7A6C400212159 /* Elephant */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B8C17B7A6C400212159 /* Elephant-selected.png */,
+				EA962B8D17B7A6C400212159 /* Elephant-selected@2x.png */,
+				EA962B8E17B7A6C400212159 /* Elephant-unselected.png */,
+				EA962B8F17B7A6C400212159 /* Elephant-unselected@2x.png */,
+			);
+			path = Elephant;
+			sourceTree = "<group>";
+		};
+		EA962B9017B7A6C400212159 /* Fist */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B9117B7A6C400212159 /* Fist-selected.png */,
+				EA962B9217B7A6C400212159 /* Fist-selected@2x.png */,
+				EA962B9317B7A6C400212159 /* Fist-unselected.png */,
+				EA962B9417B7A6C400212159 /* Fist-unselected@2x.png */,
+			);
+			path = Fist;
+			sourceTree = "<group>";
+		};
+		EA962B9517B7A6C400212159 /* Levitate */ = {
+			isa = PBXGroup;
+			children = (
+				EA962B9617B7A6C400212159 /* Levitate-selected.png */,
+				EA962B9717B7A6C400212159 /* Levitate-selected@2x.png */,
+				EA962B9817B7A6C400212159 /* Levitate-unselected.png */,
+				EA962B9917B7A6C400212159 /* Levitate-unselected@2x.png */,
+			);
+			path = Levitate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA95A91A17B70C2D009BA55E /* Build configuration list for PBXNativeTarget "Uniqlo" */;
 			buildPhases = (
+				1C5BF1168DA14111AEBC27DF /* Check Pods Manifest.lock */,
 				EA95A8E517B70C2D009BA55E /* Sources */,
 				EA95A8E617B70C2D009BA55E /* Frameworks */,
 				EA95A8E717B70C2D009BA55E /* Resources */,
+				1EE3B1D7FFFC41EBA546CCBD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,10 +321,63 @@
 				EA95A91117B70C2D009BA55E /* second@2x.png in Resources */,
 				EA95A91417B70C2D009BA55E /* TMDFirstViewController.xib in Resources */,
 				EA95A91717B70C2D009BA55E /* TMDSecondViewController.xib in Resources */,
+				EA962B9A17B7A6C400212159 /* At-selected.png in Resources */,
+				EA962B9B17B7A6C400212159 /* At-selected@2x.png in Resources */,
+				EA962B9C17B7A6C400212159 /* At-unselected.png in Resources */,
+				EA962B9D17B7A6C400212159 /* At-unselected@2x.png in Resources */,
+				EA962B9E17B7A6C400212159 /* Brain-selected.png in Resources */,
+				EA962B9F17B7A6C400212159 /* Brain-selected@2x.png in Resources */,
+				EA962BA017B7A6C400212159 /* Brain-unselected.png in Resources */,
+				EA962BA117B7A6C400212159 /* Brain-unselected@2x.png in Resources */,
+				EA962BA217B7A6C400212159 /* Elephant-selected.png in Resources */,
+				EA962BA317B7A6C400212159 /* Elephant-selected@2x.png in Resources */,
+				EA962BA417B7A6C400212159 /* Elephant-unselected.png in Resources */,
+				EA962BA517B7A6C400212159 /* Elephant-unselected@2x.png in Resources */,
+				EA962BA617B7A6C400212159 /* Fist-selected.png in Resources */,
+				EA962BA717B7A6C400212159 /* Fist-selected@2x.png in Resources */,
+				EA962BA817B7A6C400212159 /* Fist-unselected.png in Resources */,
+				EA962BA917B7A6C400212159 /* Fist-unselected@2x.png in Resources */,
+				EA962BAA17B7A6C400212159 /* Levitate-selected.png in Resources */,
+				EA962BAB17B7A6C400212159 /* Levitate-selected@2x.png in Resources */,
+				EA962BAC17B7A6C400212159 /* Levitate-unselected.png in Resources */,
+				EA962BAD17B7A6C400212159 /* Levitate-unselected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C5BF1168DA14111AEBC27DF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1EE3B1D7FFFC41EBA546CCBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA95A8E517B70C2D009BA55E /* Sources */ = {
@@ -294,6 +479,7 @@
 		};
 		EA95A91B17B70C2D009BA55E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4B27EB010842D2B984CFF8 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Uniqlo/Uniqlo-Prefix.pch";
@@ -306,6 +492,7 @@
 		};
 		EA95A91C17B70C2D009BA55E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F4B27EB010842D2B984CFF8 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Uniqlo/Uniqlo-Prefix.pch";
@@ -335,6 +522,7 @@
 				EA95A91C17B70C2D009BA55E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
