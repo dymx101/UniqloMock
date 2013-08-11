@@ -22,8 +22,8 @@
         //self.title = NSLocalizedString(@"Second", @"Second");
         //self.tabBarItem.image = [UIImage imageNamed:@"second"];
         self.title = @"Brain";
-        self.tabBarItem.image = [UIImage imageNamed:@"Brain-unselected"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"Brain-selected"];
+        self.tabBarItem.image = [UIImage imageNamed:@"green1.png"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"green1.png"];
     }
     return self;
 }
