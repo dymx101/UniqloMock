@@ -27,8 +27,11 @@
     UIViewController *viewController1 = [[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
+    UIViewController *viewController3 = [[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
+    UIViewController *viewController4 = [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    
     self.tabBarController = [JBTabBarController new];//[[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

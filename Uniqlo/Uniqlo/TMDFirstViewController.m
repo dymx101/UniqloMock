@@ -7,6 +7,7 @@
 //
 
 #import "TMDFirstViewController.h"
+#import "JBTabBarController.h"
 
 @interface TMDFirstViewController ()
 
@@ -18,8 +19,11 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        //self.title = NSLocalizedString(@"First", @"First");
+        //self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.title = @"At";
+        self.tabBarItem.image = [UIImage imageNamed:@"At-unselected"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"At-selected"];
     }
     return self;
 }
