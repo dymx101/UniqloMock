@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TMDBaseVC.h"
 
-@interface TMDFirstViewController : UIViewController
+@interface TMDFirstViewController : TMDBaseVC
 
 @end

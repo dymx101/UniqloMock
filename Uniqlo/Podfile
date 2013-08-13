@@ -3,3 +3,4 @@ platform :ios
 pod 'AFNetworking', '0.9.1'
 pod 'JRSwizzle'
 pod 'JBTabBarController'
+pod 'PrettyKit'

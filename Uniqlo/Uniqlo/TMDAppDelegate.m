@@ -14,6 +14,8 @@
 
 #import "TMDSecondViewController.h"
 
+#import "TMDNaviController.h"
+
 @implementation TMDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -24,11 +26,11 @@
     //JBTabBarController* tabBarController = [[JBTabBarController alloc] init];
     
     
-    UIViewController *viewController1 = [[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    UIViewController *viewController1 = [[TMDNaviController alloc] initWithRootViewController:[TMDFirstViewController new]];
+    UIViewController *viewController2 = [[TMDNaviController alloc] initWithRootViewController:[TMDSecondViewController new]];// [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
-    UIViewController *viewController3 = [[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
-    UIViewController *viewController4 = [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[TMDNaviController alloc] initWithRootViewController:[TMDFirstViewController new]];//[[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
+    UIViewController *viewController4 = [[TMDNaviController alloc] initWithRootViewController:[TMDSecondViewController new]];//[[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
     self.tabBarController = [JBTabBarController new];//[[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
@@ -36,6 +38,8 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

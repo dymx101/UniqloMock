@@ -3,15 +3,18 @@ PODS:
   - JBTabBarController (0.4.1):
     - JRSwizzle
   - JRSwizzle (1.0)
+  - PrettyKit (0.2.0)
 
 DEPENDENCIES:
   - AFNetworking (= 0.9.1)
   - JBTabBarController
   - JRSwizzle
+  - PrettyKit
 
 SPEC CHECKSUMS:
   AFNetworking: 081ec3c1f4768c87ae79d69a96fcc9479e232e81
   JBTabBarController: 40db02f3a4498b9d40d4aeb1045561d3641365c7
   JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
+  PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa
 
 COCOAPODS: 0.22.2

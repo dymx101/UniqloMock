@@ -50,6 +50,8 @@
 		EA962BB617B7C7A600212159 /* green2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962BB117B7C7A600212159 /* green2.png */; };
 		EA962BB717B7C7A600212159 /* green3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962BB217B7C7A600212159 /* green3.png */; };
 		EA962BB817B7C7A600212159 /* green4.png in Resources */ = {isa = PBXBuildFile; fileRef = EA962BB317B7C7A600212159 /* green4.png */; };
+		EA968B2917BA2368000D3F1D /* TMDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA968B2817BA2368000D3F1D /* TMDBaseVC.m */; };
+		EA968B2C17BA257F000D3F1D /* TMDNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA968B2B17BA257F000D3F1D /* TMDNaviController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,10 @@
 		EA962BB117B7C7A600212159 /* green2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green2.png; sourceTree = "<group>"; };
 		EA962BB217B7C7A600212159 /* green3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green3.png; sourceTree = "<group>"; };
 		EA962BB317B7C7A600212159 /* green4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green4.png; sourceTree = "<group>"; };
+		EA968B2717BA2368000D3F1D /* TMDBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDBaseVC.h; sourceTree = "<group>"; };
+		EA968B2817BA2368000D3F1D /* TMDBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDBaseVC.m; sourceTree = "<group>"; };
+		EA968B2A17BA257F000D3F1D /* TMDNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDNaviController.h; sourceTree = "<group>"; };
+		EA968B2B17BA257F000D3F1D /* TMDNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDNaviController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,10 @@
 				EA95A91217B70C2D009BA55E /* TMDFirstViewController.xib */,
 				EA95A91517B70C2D009BA55E /* TMDSecondViewController.xib */,
 				EA95A8F317B70C2D009BA55E /* Supporting Files */,
+				EA968B2717BA2368000D3F1D /* TMDBaseVC.h */,
+				EA968B2817BA2368000D3F1D /* TMDBaseVC.m */,
+				EA968B2A17BA257F000D3F1D /* TMDNaviController.h */,
+				EA968B2B17BA257F000D3F1D /* TMDNaviController.m */,
 			);
 			path = Uniqlo;
 			sourceTree = "<group>";
@@ -416,6 +426,8 @@
 				EA95A8FD17B70C2D009BA55E /* TMDAppDelegate.m in Sources */,
 				EA95A90617B70C2D009BA55E /* TMDFirstViewController.m in Sources */,
 				EA95A90D17B70C2D009BA55E /* TMDSecondViewController.m in Sources */,
+				EA968B2917BA2368000D3F1D /* TMDBaseVC.m in Sources */,
+				EA968B2C17BA257F000D3F1D /* TMDNaviController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
