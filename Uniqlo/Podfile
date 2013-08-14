@@ -1,7 +1,9 @@
-platform :ios
+platform :ios, '5.0'
 
 pod 'AFNetworking', '0.9.1'
 pod 'JRSwizzle'
 pod 'JBTabBarController'
 pod 'PrettyKit'
 pod 'KASlideShow'
+pod 'MBProgressHUD', '~> 0.7'
+pod 'SMPageControl'

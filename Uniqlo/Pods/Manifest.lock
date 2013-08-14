@@ -4,20 +4,26 @@ PODS:
     - JRSwizzle
   - JRSwizzle (1.0)
   - KASlideShow (1.1)
+  - MBProgressHUD (0.7)
   - PrettyKit (0.2.0)
+  - SMPageControl (1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 0.9.1)
   - JBTabBarController
   - JRSwizzle
   - KASlideShow
+  - MBProgressHUD (~> 0.7)
   - PrettyKit
+  - SMPageControl
 
 SPEC CHECKSUMS:
   AFNetworking: 081ec3c1f4768c87ae79d69a96fcc9479e232e81
   JBTabBarController: 40db02f3a4498b9d40d4aeb1045561d3641365c7
   JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
   KASlideShow: 5bdad2464745f99b356daae8c13be91057e106b1
+  MBProgressHUD: 1fd8591a2216d5dec6de24e09187bb03bcbe9946
   PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa
+  SMPageControl: 9d100f9aa8ca0cf10222666ff31d4d1cbfdac674
 
 COCOAPODS: 0.22.2

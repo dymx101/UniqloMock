@@ -10,7 +10,7 @@
 
 #import "JBTabBar.h"
 
-#import "TMDFirstViewController.h"
+#import "TMDHomeVC.h"
 
 #import "TMDSecondViewController.h"
 
@@ -26,10 +26,10 @@
     //JBTabBarController* tabBarController = [[JBTabBarController alloc] init];
     
     
-    UIViewController *viewController1 = [[TMDNaviController alloc] initWithRootViewController:[TMDFirstViewController new]];
+    UIViewController *viewController1 = [[TMDNaviController alloc] initWithRootViewController:[TMDHomeVC new]];
     UIViewController *viewController2 = [[TMDNaviController alloc] initWithRootViewController:[TMDSecondViewController new]];// [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
-    UIViewController *viewController3 = [[TMDNaviController alloc] initWithRootViewController:[TMDFirstViewController new]];//[[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
+    UIViewController *viewController3 = [[TMDNaviController alloc] initWithRootViewController:[TMDHomeVC new]];//[[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
     UIViewController *viewController4 = [[TMDNaviController alloc] initWithRootViewController:[TMDSecondViewController new]];//[[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
     self.tabBarController = [JBTabBarController new];//[[UITabBarController alloc] init];

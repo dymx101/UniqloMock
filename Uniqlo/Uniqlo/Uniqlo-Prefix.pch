@@ -2,6 +2,30 @@
 // Prefix header for all source files of the 'Uniqlo' target in the 'Uniqlo' project
 //
 
+
+// 单例
+#undef	AS_SINGLETON
+#define AS_SINGLETON( __class ) \
++ (__class *)sharedInstance;
+
+#undef	DEF_SINGLETON
+#define DEF_SINGLETON( __class ) \
++ (__class *)sharedInstance \
+{ \
+static dispatch_once_t once; \
+static __class * __singleton__; \
+dispatch_once( &once, ^{ __singleton__ = [[__class alloc] init]; } ); \
+return __singleton__; \
+}
+
+//LOG
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+//
 #import <Availability.h>
 
 #ifndef __IPHONE_4_0
@@ -11,4 +35,10 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "GGColor.h"
 #endif
+
+
+
+
