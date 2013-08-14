@@ -81,10 +81,15 @@
 
 -(void)_installBottomView
 {
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10, 260, 300, 90)];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10, 260, 300, 95)];
     bgView.backgroundColor = GGSharedColor.white;
     [bgView applyEffectShadowAndBorder];
     [self.view addSubview:bgView];
+    
+    //
+    UIImageView *ivLocation = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bottomView"]];
+    //[ivLocation setPos:CGPointMake(10, 15)];
+    [bgView addSubview:ivLocation];
 }
 
 -(void)slideTapped:(id)sender
