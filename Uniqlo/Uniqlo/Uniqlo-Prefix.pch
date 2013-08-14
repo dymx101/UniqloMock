@@ -26,6 +26,9 @@ return __singleton__; \
 #endif
 
 //
+#define LOG_THE_METHORD    NSLog(@"'%@' called", NSStringFromSelector(_cmd));
+
+//
 #import <Availability.h>
 
 #ifndef __IPHONE_4_0
