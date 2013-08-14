@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Pods-KASlideShow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Pods-PrettyKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>02FC8EC976A0444FAB82FBEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1598A3D6BE0B4C6991D9E33D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,6 +72,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>33AD9F786A2A4F36B4AA04D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>53A79005406C4203BDDC20B4</key>
 		<dict>
 			<key>primary</key>
@@ -82,12 +97,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>96878BE9FDD94EA7AE15F568</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B3518EFF29DC41FAA6434B99</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>BACFA54ECCBC48B38EA0FCD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BED1BA0497F5461688377021</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9956990A3C84D3C8D7FD327</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E189DEF998934DBA905FC22D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
