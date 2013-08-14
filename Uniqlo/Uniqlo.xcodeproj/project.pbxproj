@@ -61,6 +61,7 @@
 		EA9770C317BB6F1100C0E67E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9770C217BB6F1100C0E67E /* QuartzCore.framework */; };
 		EA9770C617BB737400C0E67E /* currentPageDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9770C417BB737400C0E67E /* currentPageDot@2x.png */; };
 		EA9770C717BB737400C0E67E /* pageDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9770C517BB737400C0E67E /* pageDot@2x.png */; };
+		EA9770CB17BB782400C0E67E /* GGWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9770CA17BB782400C0E67E /* GGWebVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,8 @@
 		EA9770C217BB6F1100C0E67E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EA9770C417BB737400C0E67E /* currentPageDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "currentPageDot@2x.png"; sourceTree = "<group>"; };
 		EA9770C517BB737400C0E67E /* pageDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageDot@2x.png"; sourceTree = "<group>"; };
+		EA9770C917BB782400C0E67E /* GGWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGWebVC.h; sourceTree = "<group>"; };
+		EA9770CA17BB782400C0E67E /* GGWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGWebVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 		EA95A8E017B70C2D009BA55E = {
 			isa = PBXGroup;
 			children = (
+				EA9770C817BB781A00C0E67E /* ViewControllers */,
 				EA9770C217BB6F1100C0E67E /* QuartzCore.framework */,
 				EA9770BB17BB6DB800C0E67E /* Categories */,
 				EA9770B717BB6BDE00C0E67E /* Utility */,
@@ -348,6 +352,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		EA9770C817BB781A00C0E67E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA9770C917BB782400C0E67E /* GGWebVC.h */,
+				EA9770CA17BB782400C0E67E /* GGWebVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,6 +507,7 @@
 				EA9770BA17BB6BEA00C0E67E /* GGColor.m in Sources */,
 				EA9770C017BB6DC200C0E67E /* UIView+AddOn.m in Sources */,
 				EA9770C117BB6DC200C0E67E /* UIView+LoadFromNib.m in Sources */,
+				EA9770CB17BB782400C0E67E /* GGWebVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

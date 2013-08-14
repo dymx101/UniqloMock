@@ -12,6 +12,8 @@
 #import "UIView+AddOn.h"
 #import "SMPageControl.h"
 
+#import "GGWebVC.h"
+
 @interface TMDHomeVC () <KASlideShowDelegate>
 
 @end
@@ -61,6 +63,10 @@
     [_viewSlideShow addImagesFromResources:@[@"sample_adv1.jpg",@"sample_adv2.jpg",@"sample_adv3.jpg"]];
     [_viewSlideShow start];
     
+    UITapGestureRecognizer *tapGest = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(slideTapped:)];
+    [_viewSlideShow addGesture:KASlideShowGestureSwipe];
+    [_viewSlideShow addGestureRecognizer:tapGest];
+    
     _pageControl = [[SMPageControl alloc] init];
     _pageControl.numberOfPages = 3;
     _pageControl.pageIndicatorImage = [UIImage imageNamed:@"pageDot"];
@@ -70,6 +76,13 @@
     
     [_pageControl setPosY:150];
     [_pageControl setPosX:(bgView.frame.size.width - _pageControl.frame.size.width) / 2];
+}
+
+-(void)slideTapped:(id)sender
+{
+    DLog(@"%d", _viewSlideShow.currentIndex);
+    GGWebVC *vc = [[GGWebVC alloc] initWIthURL:@"http://bing.com" title:@"演示页面"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - KASlideShow delegate
