@@ -43,16 +43,17 @@
     self.view.backgroundColor = GGSharedColor.silverLight;
 	
     [self _installSlideShow];
+    [self _installBottomView];
 }
 
 -(void)_installSlideShow
 {
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10, 15, 300, 200)];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10, 15, 300, 240)];
     bgView.backgroundColor = GGSharedColor.white;
     [bgView applyEffectShadowAndBorder];
     [self.view addSubview:bgView];
     
-    _viewSlideShow = [[KASlideShow alloc] initWithFrame:CGRectMake(0, 30, 300, 100)];
+    _viewSlideShow = [[KASlideShow alloc] initWithFrame:CGRectMake(0, 30, 300, 180)];
     [bgView addSubview:_viewSlideShow];
     
     _viewSlideShow.delegate = self;
@@ -74,8 +75,16 @@
     [_pageControl sizeToFit];
     [bgView addSubview:_pageControl];
     
-    [_pageControl setPosY:150];
+    [_pageControl setPosY:205];
     [_pageControl setPosX:(bgView.frame.size.width - _pageControl.frame.size.width) / 2];
+}
+
+-(void)_installBottomView
+{
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10, 260, 300, 90)];
+    bgView.backgroundColor = GGSharedColor.white;
+    [bgView applyEffectShadowAndBorder];
+    [self.view addSubview:bgView];
 }
 
 -(void)slideTapped:(id)sender
