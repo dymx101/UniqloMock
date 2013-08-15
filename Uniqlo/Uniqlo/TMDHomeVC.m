@@ -93,8 +93,8 @@
     //
     UIButton *nearByShopBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     nearByShopBtn.frame = CGRectMake(0, 0, 95, 95);
-    nearByShopBtn.backgroundColor = GGSharedColor.black;
-    nearByShopBtn.alpha = .5f;
+    //nearByShopBtn.backgroundColor = GGSharedColor.black;
+    //nearByShopBtn.alpha = .5f;
     [nearByShopBtn addTarget:self action:@selector(goPageNearByShop:) forControlEvents:UIControlEventTouchUpInside];
     
     [bgView addSubview:nearByShopBtn];
@@ -102,8 +102,8 @@
     //
     UIButton *twoDCodeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     twoDCodeBtn.frame = CGRectMake(95, 0, 100, 95);
-    twoDCodeBtn.backgroundColor = GGSharedColor.gray;
-    twoDCodeBtn.alpha = .5f;
+    //twoDCodeBtn.backgroundColor = GGSharedColor.gray;
+    //twoDCodeBtn.alpha = .5f;
     [twoDCodeBtn addTarget:self action:@selector(goPageTwoDCode:) forControlEvents:UIControlEventTouchUpInside];
     
     [bgView addSubview:twoDCodeBtn];
@@ -111,8 +111,8 @@
     //
     UIButton *promotionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     promotionBtn.frame = CGRectMake(195, 0, 100, 95);
-    promotionBtn.backgroundColor = GGSharedColor.darkGray;
-    promotionBtn.alpha = .5f;
+    //promotionBtn.backgroundColor = GGSharedColor.darkGray;
+    //promotionBtn.alpha = .5f;
     [promotionBtn addTarget:self action:@selector(goPagePromotion:) forControlEvents:UIControlEventTouchUpInside];
     
     [bgView addSubview:promotionBtn];
