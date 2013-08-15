@@ -64,6 +64,9 @@
 		EA9770CB17BB782400C0E67E /* GGWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9770CA17BB782400C0E67E /* GGWebVC.m */; };
 		EA9770CD17BB7E8F00C0E67E /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9770CC17BB7E8F00C0E67E /* location@2x.png */; };
 		EA9770CF17BB834900C0E67E /* bottomView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9770CE17BB834900C0E67E /* bottomView@2x.png */; };
+		EA9D141E17BCBEA8008958A5 /* TMDSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9D141C17BCBEA8008958A5 /* TMDSearchVC.m */; };
+		EA9D141F17BCBEA8008958A5 /* TMDSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D141D17BCBEA8008958A5 /* TMDSearchVC.xib */; };
+		EA9D142117BCBF75008958A5 /* mockSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9D142017BCBF75008958A5 /* mockSearch@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +140,10 @@
 		EA9770CA17BB782400C0E67E /* GGWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGWebVC.m; sourceTree = "<group>"; };
 		EA9770CC17BB7E8F00C0E67E /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
 		EA9770CE17BB834900C0E67E /* bottomView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottomView@2x.png"; sourceTree = "<group>"; };
+		EA9D141B17BCBEA8008958A5 /* TMDSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDSearchVC.h; sourceTree = "<group>"; };
+		EA9D141C17BCBEA8008958A5 /* TMDSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDSearchVC.m; sourceTree = "<group>"; };
+		EA9D141D17BCBEA8008958A5 /* TMDSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMDSearchVC.xib; sourceTree = "<group>"; };
+		EA9D142017BCBF75008958A5 /* mockSearch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mockSearch@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +245,7 @@
 		EA962B7F17B7A6C400212159 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EA9D142017BCBF75008958A5 /* mockSearch@2x.png */,
 				EA9770CE17BB834900C0E67E /* bottomView@2x.png */,
 				EA9770CC17BB7E8F00C0E67E /* location@2x.png */,
 				EA9770C417BB737400C0E67E /* currentPageDot@2x.png */,
@@ -363,6 +371,9 @@
 			children = (
 				EA9770C917BB782400C0E67E /* GGWebVC.h */,
 				EA9770CA17BB782400C0E67E /* GGWebVC.m */,
+				EA9D141B17BCBEA8008958A5 /* TMDSearchVC.h */,
+				EA9D141C17BCBEA8008958A5 /* TMDSearchVC.m */,
+				EA9D141D17BCBEA8008958A5 /* TMDSearchVC.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -463,6 +474,8 @@
 				EA9770C717BB737400C0E67E /* pageDot@2x.png in Resources */,
 				EA9770CD17BB7E8F00C0E67E /* location@2x.png in Resources */,
 				EA9770CF17BB834900C0E67E /* bottomView@2x.png in Resources */,
+				EA9D141F17BCBEA8008958A5 /* TMDSearchVC.xib in Resources */,
+				EA9D142117BCBF75008958A5 /* mockSearch@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +529,7 @@
 				EA9770C017BB6DC200C0E67E /* UIView+AddOn.m in Sources */,
 				EA9770C117BB6DC200C0E67E /* UIView+LoadFromNib.m in Sources */,
 				EA9770CB17BB782400C0E67E /* GGWebVC.m in Sources */,
+				EA9D141E17BCBEA8008958A5 /* TMDSearchVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 #import "SMPageControl.h"
 
 #import "GGWebVC.h"
+#import "TMDSearchVC.h"
 
 @interface TMDHomeVC () <KASlideShowDelegate>
 
@@ -41,6 +42,8 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = GGSharedColor.silverLight;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"搜索" style:UIBarButtonItemStylePlain target:self action:@selector(goPageSearch:)];
 	
     [self _installSlideShow];
     [self _installBottomView];
@@ -116,6 +119,13 @@
     [promotionBtn addTarget:self action:@selector(goPagePromotion:) forControlEvents:UIControlEventTouchUpInside];
     
     [bgView addSubview:promotionBtn];
+}
+
+-(void)goPageSearch:(id)sender
+{
+    LOG_THE_METHORD;
+    TMDSearchVC *vc = [[TMDSearchVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)goPageNearByShop:(id)sender
