@@ -36,6 +36,18 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 7
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
+// PSCollectionView
+#define COCOAPODS_POD_AVAILABLE_PSCollectionView
+#define COCOAPODS_VERSION_MAJOR_PSCollectionView 0
+#define COCOAPODS_VERSION_MINOR_PSCollectionView 0
+#define COCOAPODS_VERSION_PATCH_PSCollectionView 1
+
+// PSTCollectionView
+#define COCOAPODS_POD_AVAILABLE_PSTCollectionView
+#define COCOAPODS_VERSION_MAJOR_PSTCollectionView 1
+#define COCOAPODS_VERSION_MINOR_PSTCollectionView 1
+#define COCOAPODS_VERSION_PATCH_PSTCollectionView 0
+
 // PrettyKit
 #define COCOAPODS_POD_AVAILABLE_PrettyKit
 #define COCOAPODS_VERSION_MAJOR_PrettyKit 0

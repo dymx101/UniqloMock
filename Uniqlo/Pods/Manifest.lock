@@ -6,6 +6,8 @@ PODS:
   - KASlideShow (1.1)
   - MBProgressHUD (0.7)
   - PrettyKit (0.2.0)
+  - PSCollectionView (0.0.1)
+  - PSTCollectionView (1.1.0)
   - SMPageControl (1.0)
 
 DEPENDENCIES:
@@ -15,6 +17,8 @@ DEPENDENCIES:
   - KASlideShow
   - MBProgressHUD (~> 0.7)
   - PrettyKit
+  - PSCollectionView
+  - PSTCollectionView
   - SMPageControl
 
 SPEC CHECKSUMS:
@@ -24,6 +28,8 @@ SPEC CHECKSUMS:
   KASlideShow: 5bdad2464745f99b356daae8c13be91057e106b1
   MBProgressHUD: 1fd8591a2216d5dec6de24e09187bb03bcbe9946
   PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa
+  PSCollectionView: 12ef6507186d01f1aaeddf86da469f5b48a87fe9
+  PSTCollectionView: af42b0fb111200a1b87a04aee96181725977f19b
   SMPageControl: 9d100f9aa8ca0cf10222666ff31d4d1cbfdac674
 
 COCOAPODS: 0.22.2
