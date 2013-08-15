@@ -31,9 +31,9 @@
     if (self) {
         //self.title = NSLocalizedString(@"First", @"First");
         //self.tabBarItem.image = [UIImage imageNamed:@"first"];
-        self.title = @"店铺";
-        self.tabBarItem.image = [UIImage imageNamed:@"green0.png"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"green0.png"];
+        self.navigationItem.title = @"店铺";
+        self.tabBarItem.image = [UIImage imageNamed:@"tab1Black"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"tab1Red"];
     }
     return self;
 }

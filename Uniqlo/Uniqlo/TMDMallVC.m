@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Dong Yiming. All rights reserved.
 //
 
-#import "TMDSecondViewController.h"
+#import "TMDMallVC.h"
 #import "JBTabBarController.h"
 
-@interface TMDSecondViewController ()
+@interface TMDMallVC ()
 
 @end
 
-@implementation TMDSecondViewController
+@implementation TMDMallVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,9 +21,9 @@
     if (self) {
         //self.title = NSLocalizedString(@"Second", @"Second");
         //self.tabBarItem.image = [UIImage imageNamed:@"second"];
-        self.title = @"Brain";
-        self.tabBarItem.image = [UIImage imageNamed:@"green1.png"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"green1.png"];
+        self.navigationItem.title = @"商城";
+        self.tabBarItem.image = [UIImage imageNamed:@"tab2Black"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"tab2Red"];
     }
     return self;
 }

@@ -12,7 +12,10 @@
 
 #import "TMDHomeVC.h"
 
-#import "TMDSecondViewController.h"
+#import "TMDMallVC.h"
+#import "TMDCouponVC.h"
+#import "TMDNewsVC.h"
+#import "TMDMoreVC.h"
 
 #import "TMDNaviController.h"
 
@@ -27,13 +30,16 @@
     
     
     UIViewController *viewController1 = [[TMDNaviController alloc] initWithRootViewController:[TMDHomeVC new]];
-    UIViewController *viewController2 = [[TMDNaviController alloc] initWithRootViewController:[TMDSecondViewController new]];// [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    UIViewController *viewController2 = [[TMDNaviController alloc] initWithRootViewController:[TMDMallVC new]];// [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
-    UIViewController *viewController3 = [[TMDNaviController alloc] initWithRootViewController:[TMDHomeVC new]];//[[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
-    UIViewController *viewController4 = [[TMDNaviController alloc] initWithRootViewController:[TMDSecondViewController new]];//[[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[TMDNaviController alloc] initWithRootViewController:[TMDCouponVC new]];//[[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
+    UIViewController *viewController4 = [[TMDNaviController alloc] initWithRootViewController:[TMDNewsVC new]];//[[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    
+    //
+    UIViewController *viewController5 = [[TMDNaviController alloc] initWithRootViewController:[TMDMoreVC new]];
     
     self.tabBarController = [JBTabBarController new];//[[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3, viewController4, viewController5];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

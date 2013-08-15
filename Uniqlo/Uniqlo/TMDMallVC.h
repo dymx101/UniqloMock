@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "TMDBaseVC.h"
 
-@interface TMDSecondViewController : TMDBaseVC
+@interface TMDMallVC : TMDBaseVC
 
 @end
