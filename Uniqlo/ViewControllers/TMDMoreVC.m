@@ -71,13 +71,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellID = @"cellID";
+    UIFont* font = [UIFont fontWithName:@"Futura-Medium" size:17.0f];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
+    cell.textLabel.font = font;
     cell.textLabel.text = (NSString *)(((NSArray *)(_dataSource[indexPath.section]))[indexPath.row]);
     
     return cell;

@@ -17,6 +17,9 @@
 #import "TMDNewsVC.h"
 #import "TMDMoreVC.h"
 
+#import "TMDSegmentPC.h"
+#import "TMDTableVC.h"
+
 #import "TMDNaviController.h"
 
 @implementation TMDAppDelegate
@@ -30,7 +33,26 @@
     
     
     UIViewController *viewController1 = [[TMDNaviController alloc] initWithRootViewController:[TMDHomeVC new]];
-    UIViewController *viewController2 = [[TMDNaviController alloc] initWithRootViewController:[TMDMallVC new]];// [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
+    
+    // init secment pc
+    TMDTableVC *tmdTV1 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
+	TMDTableVC *tmdTV2 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
+	TMDTableVC *tmdTV3 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
+    TMDTableVC *tmdTV4 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
+	TMDTableVC *tmdTV5 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
+	
+	tmdTV1.title = @"One";
+	tmdTV2.title = @"Two";
+	tmdTV3.title = @"Three";
+    tmdTV4.title = @"Four";
+    tmdTV5.title = @"Five";
+    
+	NSArray *viewControllers = @[tmdTV1,tmdTV2,tmdTV3,tmdTV4,tmdTV5];
+    
+	TMDSegmentPC *tmdSGPC = [TMDSegmentPC new];
+	tmdSGPC.delegate = self;
+	tmdSGPC.viewControllers = viewControllers;
+    UIViewController *viewController2 = [[TMDNaviController alloc] initWithRootViewController:tmdSGPC];// [[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];
     
     UIViewController *viewController3 = [[TMDNaviController alloc] initWithRootViewController:[TMDCouponVC new]];//[[TMDFirstViewController alloc] initWithNibName:@"TMDFirstViewController" bundle:nil];
     UIViewController *viewController4 = [[TMDNaviController alloc] initWithRootViewController:[TMDNewsVC new]];//[[TMDSecondViewController alloc] initWithNibName:@"TMDSecondViewController" bundle:nil];

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "JBTabBarController.h"
+#import "TMDSegmentPC.h"
 
-@interface TMDAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface TMDAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate,TMDSegmentPCDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
