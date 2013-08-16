@@ -9,7 +9,7 @@
 #import "TMDSegmentPC.h"
 #import "JBTabBarController.h"
 
-static const float TAB_BAR_HEIGHT = 65.0f;
+static const float TAB_BAR_HEIGHT = 67.0f;
 
 @interface TMDSegmentPC ()
 
