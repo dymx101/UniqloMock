@@ -9,7 +9,11 @@
 #import "TMDNewsVC.h"
 #import "JBTabBarController.h"
 
-@interface TMDNewsVC ()
+#import "TMDNewsCell.h"
+#import "UIView+LoadFromNib.h"
+
+@interface TMDNewsVC () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tv;
 
 @end
 
@@ -29,13 +33,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    _tv.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
-- (void)didReceiveMemoryWarning
+
+- (void)viewDidUnload {
+    [self setTv:nil];
+    [super viewDidUnload];
+}
+
+#pragma mark -
+-(int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return 20;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellID = @"cellID";
+    TMDNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil)
+    {
+        cell = [TMDNewsCell viewFromNibWithOwner:self];//[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    cell.contentView.backgroundColor = GGSharedColor.silver;
+    //cell.textLabel.text = @"aaa";
+    
+    return cell;
+}
+
+-(float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 350.f;
 }
 
 @end
