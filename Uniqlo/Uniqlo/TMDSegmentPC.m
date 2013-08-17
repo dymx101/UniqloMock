@@ -171,7 +171,7 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 }
 
 - (void)setSelectedIndex:(NSUInteger)newSelectedIndex {
-	[self setSelectedIndex:newSelectedIndex animated:NO];
+	[self setSelectedIndex:newSelectedIndex animated:YES];
 }
 
 - (void)setSelectedIndex:(NSUInteger)newSelectedIndex animated:(BOOL)animated {
@@ -210,7 +210,8 @@ static const float TAB_BAR_HEIGHT = 67.0f;
             
 			if ([self.delegate respondsToSelector:@selector(segmentPageController:didSelectViewController:atIndex:)])
 				[self.delegate segmentPageController:self didSelectViewController:toViewController atIndex:newSelectedIndex];
-		} else if (animated) {
+		}
+        else if (animated) {
 			CGRect rect = self.contentContainerView.bounds;
 			if (oldSelectedIndex < newSelectedIndex)
 				rect.origin.x = rect.size.width;
