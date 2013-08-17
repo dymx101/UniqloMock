@@ -35,7 +35,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //UIView *headerView = [[UIView alloc] init];
-    self.view.backgroundColor = GGSharedColor.silverLight;
+    self.view.backgroundColor = [GGSharedColor colorFromR:235 g:235 b:235];
     //((UITableView *)self.view).tableHeaderView = headerView;
 }
 
