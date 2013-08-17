@@ -80,6 +80,11 @@
 		EA99149717BF87520015E570 /* TMDNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA99149617BF87520015E570 /* TMDNewsCell.xib */; };
 		EA99149917BF89FA0015E570 /* medinceLogo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA99149817BF89FA0015E570 /* medinceLogo@2x.jpg */; };
 		EA99149B17BF8C8D0015E570 /* newsImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA99149A17BF8C8D0015E570 /* newsImage.jpg */; };
+		EA99149E17BF903D0015E570 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA99149C17BF903D0015E570 /* Icon.png */; };
+		EA99149F17BF903D0015E570 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA99149D17BF903D0015E570 /* Icon@2x.png */; };
+		EA9914A317BF916D0015E570 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9914A017BF916C0015E570 /* Default-568h@2x.png */; };
+		EA9914A417BF916D0015E570 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9914A117BF916C0015E570 /* Default.png */; };
+		EA9914A517BF916D0015E570 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9914A217BF916D0015E570 /* Default@2x.png */; };
 		EA9D141E17BCBEA8008958A5 /* TMDSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9D141C17BCBEA8008958A5 /* TMDSearchVC.m */; };
 		EA9D141F17BCBEA8008958A5 /* TMDSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9D141D17BCBEA8008958A5 /* TMDSearchVC.xib */; };
 		EA9D142117BCBF75008958A5 /* mockSearch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9D142017BCBF75008958A5 /* mockSearch@2x.png */; };
@@ -192,6 +197,11 @@
 		EA99149617BF87520015E570 /* TMDNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMDNewsCell.xib; sourceTree = "<group>"; };
 		EA99149817BF89FA0015E570 /* medinceLogo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "medinceLogo@2x.jpg"; sourceTree = "<group>"; };
 		EA99149A17BF8C8D0015E570 /* newsImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newsImage.jpg; sourceTree = "<group>"; };
+		EA99149C17BF903D0015E570 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EA99149D17BF903D0015E570 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		EA9914A017BF916C0015E570 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Uniqlo/Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA9914A117BF916C0015E570 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Uniqlo/Default.png; sourceTree = "<group>"; };
+		EA9914A217BF916D0015E570 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Uniqlo/Default@2x.png"; sourceTree = "<group>"; };
 		EA9D141B17BCBEA8008958A5 /* TMDSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDSearchVC.h; sourceTree = "<group>"; };
 		EA9D141C17BCBEA8008958A5 /* TMDSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDSearchVC.m; sourceTree = "<group>"; };
 		EA9D141D17BCBEA8008958A5 /* TMDSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMDSearchVC.xib; sourceTree = "<group>"; };
@@ -237,6 +247,11 @@
 		EA95A8E017B70C2D009BA55E = {
 			isa = PBXGroup;
 			children = (
+				EA9914A017BF916C0015E570 /* Default-568h@2x.png */,
+				EA9914A117BF916C0015E570 /* Default.png */,
+				EA9914A217BF916D0015E570 /* Default@2x.png */,
+				EA99149C17BF903D0015E570 /* Icon.png */,
+				EA99149D17BF903D0015E570 /* Icon@2x.png */,
 				EA99149217BF87000015E570 /* Views */,
 				EA9770C817BB781A00C0E67E /* ViewControllers */,
 				EA9770C217BB6F1100C0E67E /* QuartzCore.framework */,
@@ -630,6 +645,11 @@
 				EA99149717BF87520015E570 /* TMDNewsCell.xib in Resources */,
 				EA99149917BF89FA0015E570 /* medinceLogo@2x.jpg in Resources */,
 				EA99149B17BF8C8D0015E570 /* newsImage.jpg in Resources */,
+				EA99149E17BF903D0015E570 /* Icon.png in Resources */,
+				EA99149F17BF903D0015E570 /* Icon@2x.png in Resources */,
+				EA9914A317BF916D0015E570 /* Default-568h@2x.png in Resources */,
+				EA9914A417BF916D0015E570 /* Default.png in Resources */,
+				EA9914A517BF916D0015E570 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
