@@ -33,6 +33,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //UIView *headerView = [[UIView alloc] init];
+    self.view.backgroundColor = GGSharedColor.silverLight;
+    //((UITableView *)self.view).tableHeaderView = headerView;
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +64,15 @@
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;
     cell.textLabel.font = font;
 	cell.textLabel.text = [NSString stringWithFormat:@"Page %@ - Row %d", self.title, indexPath.row];
+    
+    //cell.contentView.backgroundColor = GGSharedColor.white;
+    UIView *bgView = [[UIView alloc] initWithFrame:cell.contentView.bounds];
+    bgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    bgView.backgroundColor = GGSharedColor.white;
+    [cell.contentView insertSubview:bgView belowSubview:cell.textLabel];
+    
+    cell.textLabel.backgroundColor = GGSharedColor.clear;
+    
 	return cell;
 }
 
