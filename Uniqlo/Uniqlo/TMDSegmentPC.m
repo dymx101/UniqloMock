@@ -17,14 +17,13 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 
 @implementation TMDSegmentPC
 {
-	UIView             *headerContainerView;
-    UISegmentedControl *segmentedControl;
-	UIView             *contentContainerView;
+
 }
 
 @synthesize viewControllers  = _viewControllers;
 @synthesize selectedIndex    = _selectedIndex;
 @synthesize delegate         = _delegate;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -41,7 +40,7 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 }
 
 - (void)removeAllSegments {
-    [segmentedControl removeAllSegments];
+    [self.segmentedControl removeAllSegments];
 }
 
 - (void)addSegments {
@@ -50,19 +49,13 @@ static const float TAB_BAR_HEIGHT = 67.0f;
         //        [segmentedControl insertSegmentWithTitle:viewController.title atIndex:index animated:NO];
         if (index == _selectedIndex)
         {
-            NSString *label = viewController.title;
-            UIImage *image =  [self drawText:@"Some text"
-                                           inImage:[UIImage imageNamed:@"tabsel"]
-                                           atPoint:CGPointMake(0, 0)];
-            [segmentedControl insertSegmentWithImage:image atIndex:index animated:NO];
+            NSString *imgName = [NSString stringWithFormat:@"tabsel_%d",_selectedIndex];
+            [self.segmentedControl insertSegmentWithImage:[UIImage imageNamed:imgName] atIndex:index animated:NO];
         }
         else
         {
-            NSString *label = viewController.title;
-            UIImage *image =  [self drawText:@"Some text"
-                                     inImage:[UIImage imageNamed:@"tabunsel"]
-                                     atPoint:CGPointMake(0, 0)];
-            [segmentedControl insertSegmentWithImage:image atIndex:index animated:NO];
+            NSString *imgName = [NSString stringWithFormat:@"tabunsel_%d",index];
+            [self.segmentedControl insertSegmentWithImage:[UIImage imageNamed:imgName] atIndex:index animated:NO];
         }
 		++index;
 	}
@@ -72,7 +65,8 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 {
 	NSUInteger index = 0;
 	for (UIViewController *viewController in self.viewControllers) {
-        [segmentedControl setImage:[UIImage imageNamed:@"tabunsel"] forSegmentAtIndex:index];
+        NSString *imgName = [NSString stringWithFormat:@"tabunsel_%d",index];
+        [self.segmentedControl setImage:[UIImage imageNamed:imgName] forSegmentAtIndex:index];
 		++index;
 	}
 }
@@ -89,7 +83,7 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 
 - (void)layoutHeaderView {
 	CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
-    segmentedControl.frame = CGRectInset(rect, 5.0, 5.0);
+    self.segmentedControl.frame = CGRectInset(rect, 5.0, 5.0);
 }
 
 - (void)viewDidLoad
@@ -100,32 +94,33 @@ static const float TAB_BAR_HEIGHT = 67.0f;
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
 	CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, TAB_BAR_HEIGHT);
-	headerContainerView = [[UIView alloc] initWithFrame:rect];
-	headerContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    headerContainerView.backgroundColor = GGSharedColor.silver;
+	self.headerContainerView = [[UIView alloc] initWithFrame:rect];
+	self.headerContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    self.headerContainerView.backgroundColor = GGSharedColor.silver;
     CGRect segmentedControlRect = CGRectInset(rect, 5.0, 5.0);
-    segmentedControl = [[UISegmentedControl alloc] initWithFrame:segmentedControlRect];
-    segmentedControl.momentary = NO;
-    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-    [segmentedControl addTarget:self action:@selector(tabButtonPressed:) forControlEvents:UIControlEventValueChanged];
+    self.segmentedControl = [[UISegmentedControl alloc] initWithFrame:segmentedControlRect];
+    self.segmentedControl.momentary = NO;
+    self.segmentedControl.segmentedControlStyle = 6;
     
-    [headerContainerView addSubview:segmentedControl];
-	[self.view addSubview:headerContainerView];
+    [self.segmentedControl addTarget:self action:@selector(tabButtonPressed:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.headerContainerView addSubview:self.segmentedControl];
+	[self.view addSubview:self.headerContainerView];
     
 	rect.origin.y = TAB_BAR_HEIGHT;
 	rect.size.height = self.view.bounds.size.height - TAB_BAR_HEIGHT;
-	contentContainerView = [[UIView alloc] initWithFrame:rect];
-	contentContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	[self.view addSubview:contentContainerView];
+	self.contentContainerView = [[UIView alloc] initWithFrame:rect];
+	self.contentContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+	[self.view addSubview:self.contentContainerView];
     
 	[self reloadTabButtons];
 }
 
 - (void)viewDidUnload {
 	[super viewDidUnload];
-	headerContainerView = nil;
-	contentContainerView = nil;
-	segmentedControl = nil;
+	self.headerContainerView = nil;
+	self.contentContainerView = nil;
+	self.segmentedControl = nil;
 }
 
 - (void)viewWillLayoutSubviews {
@@ -200,8 +195,9 @@ static const float TAB_BAR_HEIGHT = 67.0f;
         
 		if (_selectedIndex != NSNotFound) {
             [self resetAllSegmentsBackImage];
-            [segmentedControl setSelectedSegmentIndex:_selectedIndex];
-            [segmentedControl setImage:[UIImage imageNamed:@"tabsel"] forSegmentAtIndex:_selectedIndex];
+            [self.segmentedControl setSelectedSegmentIndex:_selectedIndex];
+            NSString *imgName = [NSString stringWithFormat:@"tabsel_%d",_selectedIndex];
+            [self.segmentedControl setImage:[UIImage imageNamed:imgName] forSegmentAtIndex:_selectedIndex];
 			toViewController = self.selectedViewController;
 		}
         
@@ -209,20 +205,20 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 			[fromViewController.view removeFromSuperview];
 		}
 		else if (fromViewController == nil) { // don't animate
-			toViewController.view.frame = contentContainerView.bounds;
-			[contentContainerView addSubview:toViewController.view];
+			toViewController.view.frame = self.contentContainerView.bounds;
+			[self.contentContainerView addSubview:toViewController.view];
             
 			if ([self.delegate respondsToSelector:@selector(segmentPageController:didSelectViewController:atIndex:)])
 				[self.delegate segmentPageController:self didSelectViewController:toViewController atIndex:newSelectedIndex];
 		} else if (animated) {
-			CGRect rect = contentContainerView.bounds;
+			CGRect rect = self.contentContainerView.bounds;
 			if (oldSelectedIndex < newSelectedIndex)
 				rect.origin.x = rect.size.width;
 			else
 				rect.origin.x = -rect.size.width;
             
 			toViewController.view.frame = rect;
-			headerContainerView.userInteractionEnabled = NO;
+			self.headerContainerView.userInteractionEnabled = NO;
             
 			[self transitionFromViewController:fromViewController
                               toViewController:toViewController
@@ -236,10 +232,10 @@ static const float TAB_BAR_HEIGHT = 67.0f;
                                             rect.origin.x = rect.size.width;
                                         
                                         fromViewController.view.frame = rect;
-                                        toViewController.view.frame = contentContainerView.bounds;
+                                        toViewController.view.frame = self.contentContainerView.bounds;
                                     }
                                     completion:^(BOOL finished) {
-                                        headerContainerView.userInteractionEnabled = YES;
+                                        self.headerContainerView.userInteractionEnabled = YES;
                                         
                                         if ([self.delegate respondsToSelector:@selector(segmentPageController:didSelectViewController:atIndex:)])
                                             [self.delegate segmentPageController:self didSelectViewController:toViewController atIndex:newSelectedIndex];
@@ -247,8 +243,8 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 		} else { // not animated
 			[fromViewController.view removeFromSuperview];
             
-			toViewController.view.frame = contentContainerView.bounds;
-			[contentContainerView addSubview:toViewController.view];
+			toViewController.view.frame = self.contentContainerView.bounds;
+			[self.contentContainerView addSubview:toViewController.view];
             
 			if ([self.delegate respondsToSelector:@selector(segmentPageController:didSelectViewController:atIndex:)])
 				[self.delegate segmentPageController:self didSelectViewController:toViewController atIndex:newSelectedIndex];
@@ -276,23 +272,6 @@ static const float TAB_BAR_HEIGHT = 67.0f;
 
 - (void)tabButtonPressed:(UISegmentedControl *)sender {
 	[self setSelectedIndex:sender.selectedSegmentIndex animated:YES];
-}
-
--(UIImage*) drawText:(NSString*) text
-             inImage:(UIImage*)  image
-             atPoint:(CGPoint)   point
-{
-    
-    UIFont *font = [UIFont boldSystemFontOfSize:12];
-    UIGraphicsBeginImageContext(image.size);
-    [image drawInRect:CGRectMake(0,0,image.size.width,image.size.height)];
-    CGRect rect = CGRectMake(point.x, point.y, image.size.width, image.size.height);
-    [[UIColor blackColor] set];
-    [text drawInRect:CGRectIntegral(rect) withFont:font];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return newImage;
 }
 
 @end

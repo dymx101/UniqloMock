@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		38E7EBF11040436992E08DE7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13322FA2D8934DCAA683C0A6 /* libPods.a */; };
-		4CAED17717BEA3A60022B08D /* tabsel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED17517BEA3A10022B08D /* tabsel@2x.png */; };
-		4CAED17817BEA3A60022B08D /* tabunsel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED17617BEA3A30022B08D /* tabunsel@2x.png */; };
 		4CAED17B17BEA3ED0022B08D /* TMDTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAED17A17BEA3ED0022B08D /* TMDTableVC.m */; };
 		4CAED17E17BEA4210022B08D /* TMDSegmentPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAED17D17BEA41F0022B08D /* TMDSegmentPC.m */; };
+		4CAED18C17BF4A650022B08D /* tabsel_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18217BF4A1E0022B08D /* tabsel_0@2x.png */; };
+		4CAED18D17BF4A650022B08D /* tabsel_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18317BF4A1F0022B08D /* tabsel_1@2x.png */; };
+		4CAED18E17BF4A650022B08D /* tabsel_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18417BF4A210022B08D /* tabsel_2@2x.png */; };
+		4CAED18F17BF4A660022B08D /* tabsel_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18517BF4A240022B08D /* tabsel_3@2x.png */; };
+		4CAED19017BF4A660022B08D /* tabsel_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18617BF4A260022B08D /* tabsel_4@2x.png */; };
+		4CAED19117BF4A660022B08D /* tabunsel_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18717BF4A270022B08D /* tabunsel_0@2x.png */; };
+		4CAED19217BF4A660022B08D /* tabunsel_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18817BF4A290022B08D /* tabunsel_1@2x.png */; };
+		4CAED19317BF4A660022B08D /* tabunsel_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18917BF4A3A0022B08D /* tabunsel_2@2x.png */; };
+		4CAED19417BF4A660022B08D /* tabunsel_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18A17BF4A5A0022B08D /* tabunsel_3@2x.png */; };
+		4CAED19517BF4A660022B08D /* tabunsel_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAED18B17BF4A5C0022B08D /* tabunsel_4@2x.png */; };
 		EA95A8ED17B70C2D009BA55E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95A8EC17B70C2D009BA55E /* UIKit.framework */; };
 		EA95A8EF17B70C2D009BA55E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95A8EE17B70C2D009BA55E /* Foundation.framework */; };
 		EA95A8F117B70C2D009BA55E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95A8F017B70C2D009BA55E /* CoreGraphics.framework */; };
@@ -92,12 +100,20 @@
 
 /* Begin PBXFileReference section */
 		13322FA2D8934DCAA683C0A6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CAED17517BEA3A10022B08D /* tabsel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsel@2x.png"; sourceTree = "<group>"; };
-		4CAED17617BEA3A30022B08D /* tabunsel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabunsel@2x.png"; sourceTree = "<group>"; };
 		4CAED17917BEA3EC0022B08D /* TMDTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDTableVC.h; sourceTree = "<group>"; };
 		4CAED17A17BEA3ED0022B08D /* TMDTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDTableVC.m; sourceTree = "<group>"; };
 		4CAED17C17BEA41F0022B08D /* TMDSegmentPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDSegmentPC.h; sourceTree = "<group>"; };
 		4CAED17D17BEA41F0022B08D /* TMDSegmentPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDSegmentPC.m; sourceTree = "<group>"; };
+		4CAED18217BF4A1E0022B08D /* tabsel_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsel_0@2x.png"; sourceTree = "<group>"; };
+		4CAED18317BF4A1F0022B08D /* tabsel_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsel_1@2x.png"; sourceTree = "<group>"; };
+		4CAED18417BF4A210022B08D /* tabsel_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsel_2@2x.png"; sourceTree = "<group>"; };
+		4CAED18517BF4A240022B08D /* tabsel_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsel_3@2x.png"; sourceTree = "<group>"; };
+		4CAED18617BF4A260022B08D /* tabsel_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabsel_4@2x.png"; sourceTree = "<group>"; };
+		4CAED18717BF4A270022B08D /* tabunsel_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabunsel_0@2x.png"; sourceTree = "<group>"; };
+		4CAED18817BF4A290022B08D /* tabunsel_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabunsel_1@2x.png"; sourceTree = "<group>"; };
+		4CAED18917BF4A3A0022B08D /* tabunsel_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabunsel_2@2x.png"; sourceTree = "<group>"; };
+		4CAED18A17BF4A5A0022B08D /* tabunsel_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabunsel_3@2x.png"; sourceTree = "<group>"; };
+		4CAED18B17BF4A5C0022B08D /* tabunsel_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabunsel_4@2x.png"; sourceTree = "<group>"; };
 		4F4B27EB010842D2B984CFF8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EA95A8E917B70C2D009BA55E /* Uniqlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uniqlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA95A8EC17B70C2D009BA55E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -297,8 +313,16 @@
 		EA962B7F17B7A6C400212159 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4CAED17517BEA3A10022B08D /* tabsel@2x.png */,
-				4CAED17617BEA3A30022B08D /* tabunsel@2x.png */,
+				4CAED18217BF4A1E0022B08D /* tabsel_0@2x.png */,
+				4CAED18317BF4A1F0022B08D /* tabsel_1@2x.png */,
+				4CAED18417BF4A210022B08D /* tabsel_2@2x.png */,
+				4CAED18517BF4A240022B08D /* tabsel_3@2x.png */,
+				4CAED18617BF4A260022B08D /* tabsel_4@2x.png */,
+				4CAED18717BF4A270022B08D /* tabunsel_0@2x.png */,
+				4CAED18817BF4A290022B08D /* tabunsel_1@2x.png */,
+				4CAED18917BF4A3A0022B08D /* tabunsel_2@2x.png */,
+				4CAED18A17BF4A5A0022B08D /* tabunsel_3@2x.png */,
+				4CAED18B17BF4A5C0022B08D /* tabunsel_4@2x.png */,
 				EA9D144617BCC9B8008958A5 /* mockCoupOn@2x.png */,
 				EA9D142017BCBF75008958A5 /* mockSearch@2x.png */,
 				EA9770CE17BB834900C0E67E /* bottomView@2x.png */,
@@ -571,8 +595,16 @@
 				EA9D144017BCC720008958A5 /* TMDNewsVC.xib in Resources */,
 				EA9D144517BCC7B9008958A5 /* TMDMoreVC.xib in Resources */,
 				EA9D144717BCC9B8008958A5 /* mockCoupOn@2x.png in Resources */,
-				4CAED17717BEA3A60022B08D /* tabsel@2x.png in Resources */,
-				4CAED17817BEA3A60022B08D /* tabunsel@2x.png in Resources */,
+				4CAED18C17BF4A650022B08D /* tabsel_0@2x.png in Resources */,
+				4CAED18D17BF4A650022B08D /* tabsel_1@2x.png in Resources */,
+				4CAED18E17BF4A650022B08D /* tabsel_2@2x.png in Resources */,
+				4CAED18F17BF4A660022B08D /* tabsel_3@2x.png in Resources */,
+				4CAED19017BF4A660022B08D /* tabsel_4@2x.png in Resources */,
+				4CAED19117BF4A660022B08D /* tabunsel_0@2x.png in Resources */,
+				4CAED19217BF4A660022B08D /* tabunsel_1@2x.png in Resources */,
+				4CAED19317BF4A660022B08D /* tabunsel_2@2x.png in Resources */,
+				4CAED19417BF4A660022B08D /* tabunsel_3@2x.png in Resources */,
+				4CAED19517BF4A660022B08D /* tabunsel_4@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

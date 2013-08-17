@@ -23,6 +23,10 @@
 /// whether a page can or can't be selected
 @property (nonatomic, weak) id <TMDSegmentPCDelegate> delegate;
 
+@property (nonatomic, strong) UIView   *headerContainerView;
+@property (nonatomic, strong) UISegmentedControl  *segmentedControl;
+@property (nonatomic, strong) UIView     *contentContainerView;
+
 - (void)setSelectedIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)setSelectedViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
