@@ -10,7 +10,9 @@
 #import "TMDSegmentPC.h"
 
 @interface TMDTableVC ()
-
+{
+    NSMutableDictionary *data;
+}
 @end
 
 @implementation TMDTableVC
@@ -20,6 +22,13 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        data = [[NSMutableDictionary alloc] initWithObjects:
+                @[
+                @[@"砒石(外用蚀疮杀虫，内服劫痰截疟)",@"磁石（镇惊安神）",@"芒硝（软坚泻下）",@"芦荟芦荟(清热，通便)",@"泽兰(活血祛瘀)",@"桑叶(祛风清热)",@"百合(养阴润肺止咳)",@"艾叶(理气血、温经脉)",@"款冬花(润肺下气)"],
+                @[@"枸杞	(成都通灵中药饮片精选有限公司)",@"当归	(安徽广印堂中药股份有限公司)",@"白芷	(亳州市盛林中药饮片有限公司)",@"公丁香	(通用美康医药有限公司)",@"金银花	(重庆市秀山红星中药材开发有限公司)",@"冬虫夏草	(成都通灵中药饮片精选有限公司)",@"柴胡	(成都通灵中药饮片精选有限公司)",@"柴胡	(成都通灵中药饮片精选有限公司)",@"白芷	(亳州市盛林中药饮片有限公司)"],
+                @[@"栀子金花丸(双士药业)",@"京制牛黄解毒片(同仁堂科技)",@"栀子金花丸(九郡药业)",@"四季三黄片(9g)",@"十味龙胆花颗粒",@"四季三黄片(中新药业)",@"凉膈丸",@"金衣万应丸",@"栀芩清热液(橄榄枝制药)"],
+                @[@"伤风感冒冲剂",@"防风通圣丸",@"四味土木香散",@"复方野菊感冒冲剂",@"穿心莲胶囊",@"速效伤风胶囊",@"柴胡注射液",@"银翘解毒丸",@"鱼腥草注射液"],
+                @[@"盐酸去氧肾上腺素",@"盐酸罂粟碱",@"藻酸双脂钠",@"硫酸吗啡控释片",@"丙戊酸钠缓释片",@"丙戊酸钠缓释片",@"卡马西平胶囊",@"单盐酸氟西泮",@"氢溴酸西酞普兰"]] forKeys:@[@"One",@"Two",@"Three",@"Four",@"Five"]];
     }
     return self;
 }
@@ -51,24 +60,27 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 20;
+    return 9;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	static NSString *CellIdentifier = @"Cell";
-    UIFont* font = [UIFont fontWithName:@"Futura-Medium" size:15.0f];
+    UIFont* font = [UIFont fontWithName:@"Futura-Medium" size:13.0f];
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil)
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;
     cell.textLabel.font = font;
-	cell.textLabel.text = [NSString stringWithFormat:@"Page %@ - Row %d", self.title, indexPath.row];
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    
+    NSArray *cellTitleArray = [data objectForKey:self.title];
+	cell.textLabel.text = [cellTitleArray objectAtIndex:indexPath.row];
     
     //cell.contentView.backgroundColor = GGSharedColor.white;
     UIView *bgView = [[UIView alloc] initWithFrame:cell.contentView.bounds];
-    bgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    bgView.backgroundColor = GGSharedColor.white;
+//    bgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    bgView.backgroundColor = GGSharedColor.silverLight;
     [cell.contentView insertSubview:bgView belowSubview:cell.textLabel];
     
     cell.textLabel.backgroundColor = GGSharedColor.clear;
