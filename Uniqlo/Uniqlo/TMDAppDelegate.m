@@ -34,7 +34,7 @@
     
     UIViewController *viewController1 = [[TMDNaviController alloc] initWithRootViewController:[TMDHomeVC new]];
     
-    // init secment pc
+    // INIT THE SEGMENT PC
     TMDTableVC *tmdTV1 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
 	TMDTableVC *tmdTV2 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
 	TMDTableVC *tmdTV3 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
