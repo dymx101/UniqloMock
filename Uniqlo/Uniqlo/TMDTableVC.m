@@ -8,6 +8,7 @@
 
 #import "TMDTableVC.h"
 #import "TMDSegmentPC.h"
+#import "GGWebVC.h"
 
 @interface TMDTableVC ()
 {
@@ -94,6 +95,9 @@
 	NSLog(@"%@, parent is %@", self.title, self.parentViewController);
     
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    GGWebVC *vc = [[GGWebVC alloc] initWIthURL:@"http://bing.com" title:@"演示页面"];
+    [self.navigationController pushViewController:vc animated:YES];
     
 //	TMDTableVC *listViewController1 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
 //	TMDTableVC *listViewController2 = [[TMDTableVC alloc] initWithStyle:UITableViewStylePlain];
